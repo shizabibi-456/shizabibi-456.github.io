@@ -3,50 +3,97 @@
 <head>
 <title>Shiza Bibi Portfolio</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <style>
 body {
     font-family: 'Segoe UI';
     margin: 0;
-    background: #eef2f7;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
 }
 
+/* HEADER */
 header {
     background: linear-gradient(135deg, #0077ff, #00c6ff);
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 60px;
 }
 
 header h1 {
     margin: 0;
+    font-size: 40px;
 }
 
+/* SECTION */
 section {
     margin: 20px;
     padding: 25px;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
 
+/* HEADINGS */
 h2 {
     color: #0077ff;
-    border-bottom: 2px solid #0077ff;
+    border-bottom: 3px solid #0077ff;
     padding-bottom: 5px;
 }
 
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    color: white;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECT */
 .project {
     margin-top: 15px;
     padding: 15px;
-    background: #f4f9ff;
-    border-left: 5px solid #0077ff;
-    border-radius: 8px;
+    background: #f1f8ff;
+    border-left: 6px solid #0077ff;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-ul {
-    line-height: 1.8;
+.project:hover {
+    transform: translateX(5px);
 }
 
+/* CONTACT */
+.contact p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.contact i {
+    margin-right: 10px;
+    color: #0077ff;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: bold;
+}
+
+/* FOOTER */
 footer {
     background: #222;
     color: white;
@@ -68,19 +115,22 @@ footer {
 <h2>About Me</h2>
 <p>
 I am Shiza Bibi, a BS Computer Science student (4th Semester). I have strong interest in programming, problem-solving, and software development. 
-I always try to understand concepts deeply and perform my work at the best level. My goal is to become a skilled and confident software developer.
+I always try to understand concepts deeply and aim to become a skilled and confident software developer.
 </p>
 </section>
 
 <section>
 <h2>Skills</h2>
-<ul>
-<li>Programming: C, C++, Java, Python</li>
-<li>OOP Concepts</li>
-<li>Data Structures (Basic)</li>
-<li>Web Development (Learning)</li>
-<li>Teamwork & Communication</li>
-</ul>
+<div class="skills">
+<div class="skill-box">C</div>
+<div class="skill-box">C++</div>
+<div class="skill-box">Java</div>
+<div class="skill-box">Python</div>
+<div class="skill-box">OOP</div>
+<div class="skill-box">Data Structures</div>
+<div class="skill-box">Web Development</div>
+<div class="skill-box">Problem Solving</div>
+</div>
 </section>
 
 <section>
@@ -88,22 +138,22 @@ I always try to understand concepts deeply and perform my work at the best level
 
 <div class="project">
 <h3>Password Strength Checker</h3>
-<p>Developed a system that checks password strength based on security rules like length, numbers, and special characters.</p>
+<p>Checks password security level based on length, characters, and complexity rules.</p>
 </div>
 
 <div class="project">
 <h3>Library Management System</h3>
-<p>Designed a system to manage books, issue/return records, and student data efficiently.</p>
+<p>Manages book records, issue/return system, and student data efficiently.</p>
 </div>
 
 <div class="project">
 <h3>Student Record System</h3>
-<p>Created a system to store and manage student academic records.</p>
+<p>Stores and manages student academic records with proper structure.</p>
 </div>
 
 <div class="project">
 <h3>Sorting Algorithm Visualizer</h3>
-<p>Implemented visualization of sorting algorithms to understand working and efficiency.</p>
+<p>Visual representation of sorting algorithms to understand their working.</p>
 </div>
 
 </section>
@@ -114,15 +164,15 @@ I always try to understand concepts deeply and perform my work at the best level
 <div class="project">
 <h3>PECA Law in Pakistan – Effectiveness and Challenges</h3>
 
-<p><b>Description:</b> Research-based project analyzing the effectiveness of PECA law in Pakistan, focusing on cyber law, legal frameworks, and data protection.</p>
+<p><b>Description:</b> Research-based project analyzing cyber law, legal frameworks, and data protection in Pakistan.</p>
 
-<p><b>My Role:</b> Research, data collection, documentation, and analysis of legal aspects.</p>
+<p><b>My Role:</b> Research, data collection, documentation, and legal analysis.</p>
 
-<p><b>Challenges:</b> Finding updated legal data, understanding new vs old laws.</p>
+<p><b>Challenges:</b> Finding updated legal data and understanding complex laws.</p>
 
-<p><b>Solution:</b> Used research papers, teamwork discussion, and careful analysis.</p>
+<p><b>Solution:</b> Used research papers, teamwork discussion, and detailed analysis.</p>
 
-<p><b>Learning:</b> Improved research skills, teamwork, and understanding of cyber law.</p>
+<p><b>Learning:</b> Improved research skills, teamwork, and understanding of cyber laws.</p>
 
 </div>
 
@@ -140,12 +190,29 @@ I always try to understand concepts deeply and perform my work at the best level
 
 <section>
 <h2>Contact</h2>
-<p>GitHub: <a href="https://github.com/shizabibi-456">Click Here</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/shiza-bibi-31b7b93a1/">Click Here</a></p>
+
+<div class="contact">
+
+<p><i class="fas fa-envelope"></i> 
+<a href="mailto:shizabibi4568@gmail.com">shizabibi4568@gmail.com</a>
+</p>
+
+<p><i class="fas fa-phone"></i> +92-300-1234567</p>
+
+<p><i class="fab fa-github"></i> 
+<a href="https://github.com/shizabibi-456">GitHub Profile</a>
+</p>
+
+<p><i class="fab fa-linkedin"></i> 
+<a href="https://www.linkedin.com/in/shiza-bibi-31b7b93a1/">LinkedIn Profile</a>
+</p>
+
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Shiza Bibi</p>
+<p>© 2026 Shiza Bibi | All Rights Reserved</p>
 </footer>
 
 </body>
